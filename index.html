@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      h1 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
       .boxes {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -15,8 +19,20 @@
         background-color: orange;
         border-radius: 8px;
       }
-      .songOne {
-        height: 50px;
+      .displaysong {
+        width: 20%;
+      }
+
+      button {
+        display: block;
+        margin: 10px;
+        padding: 10px 30px;
+        border: 2px solid rgb(52, 169, 130);
+        border-radius: 4px;
+        background-color: mediumaquamarine;
+        color: rgb(186, 248, 227);
+        font-weight: 900;
+        box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.42);
       }
     </style>
   </head>
@@ -31,15 +47,35 @@
       <div class="box text">6</div>
     </div>
 
+    <div id="songTwo" class="displaysong"></div>
 
+    <div class="playlist">
+      <button
+        class="episode"
+        data-spotify-id="spotify:track:2kx7MjhR8cJlPf432mBJzb"
+      >
+        Bojockey - Maker Made
+      </button>
 
-<div id="songTwo">
- 
-</div>
-
+      <button
+        class="episode"
+        data-spotify-id="spotify:track:6wgFTPU9qCvPYcbLjbJPXX"
+      >
+        That Hill - Divorce
+      </button>
+      <button
+        class="episode"
+        data-spotify-id="spotify:track:6enjRLiTv7dxedK3ZiE2l3"
+      >
+        Tumbledown - Hayley Rose
+      </button>
+    </div>
 
     <!-- Spotify -->
-<script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
-<script src="java.js"></script>
+    <script
+      src="https://open.spotify.com/embed-podcast/iframe-api/v1"
+      async
+    ></script>
+    <script src="java.js"></script>
   </body>
 </html>
